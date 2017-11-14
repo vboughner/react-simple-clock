@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class ButtonLand extends Component {
     render() {
@@ -14,3 +15,16 @@ export default class ButtonLand extends Component {
         );
     }
 }
+
+ButtonLand.propTypes = {
+    counter: PropTypes.number,
+    hasClock: PropTypes.bool,
+    onClick: PropTypes.func.isRequired,
+    onRemoveClock: PropTypes.func.isRequired,
+    onReplaceClock: PropTypes.func.isRequired,
+};
+
+ButtonLand.defaultProps = {
+    counter: 5,
+    hasClock: false,
+};

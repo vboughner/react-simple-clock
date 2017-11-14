@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 
 export default class Clock extends Component {
     constructor(props) {
@@ -67,7 +67,7 @@ export default class Clock extends Component {
         if (nextProps.counter !== this.props.counter) {
             console.log('counter is changing from ' + this.props.counter + ' to ' + nextProps.counter);
         }
-        console.log(nextProps);
+        // console.log(nextProps);
     }
 
     componentWillUpdate() {
@@ -77,7 +77,7 @@ export default class Clock extends Component {
 
     componentDidUpdate() {
         console.log('componentDidUpdate');
-        console.log(this.props);
+        // console.log(this.props);
     }
 
     componentWillUnmount() {
@@ -87,3 +87,11 @@ export default class Clock extends Component {
         }
     }
 }
+
+Clock.propTypes = {
+    counter: PropTypes.number.isRequired,
+};
+
+Clock.defaultProps = {
+    counter: 5,
+};
