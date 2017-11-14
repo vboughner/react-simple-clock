@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Clock from './Clock';
 import ButtonLand from './ButtonLand';
+import Footer from './Footer';
 
 class App extends Component {
     constructor(props) {
@@ -22,6 +23,9 @@ class App extends Component {
             <div className="App">
                 <ButtonLand counter={this.state.counter} onClick={() => this.handleClick()}/>
                 <Clock counter={this.state.counter} />
+                <Footer>
+                    Copyright 2017 Boo Boo
+                </Footer>
             </div>
         );
     }

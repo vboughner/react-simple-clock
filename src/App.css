@@ -1,6 +1,6 @@
 .clock {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 200px;
     margin-right: 200px;
     padding: 50px;
@@ -12,7 +12,7 @@
 
 .button-land {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
     padding: 50px;
@@ -34,4 +34,15 @@
 
 .button-land button:active {
     background-color: cornflowerblue;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: whitesmoke;
 }
