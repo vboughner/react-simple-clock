@@ -1,39 +1,37 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .clock {
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 50px;
-  border: 2px solid grey;
-  border-radius: 15px;
-  background-color: lightgreen;
-  font-size: 48px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: lightgreen;
+    font-size: 48px;
+}
+
+.button-land {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: slategrey;
+}
+
+.button-land button {
+    font-size: 48px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+
+.button-land button:hover {
+    background-color: navajowhite;
+}
+
+.button-land button:active {
+    background-color: cornflowerblue;
 }
