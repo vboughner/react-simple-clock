@@ -7,7 +7,6 @@ export default class Clock extends Component {
         this.state = {
             time: Clock.getTime()
         };
-        this.setTimer();
     }
 
     static getTime() {
@@ -58,12 +57,17 @@ export default class Clock extends Component {
 
     componentDidMount() {
         console.log('componentDidMount');
+        this.setTimer();
     }
 
-    componentWillReceiveProps() {
+    componentWillReceiveProps(nextProps) {
         // props may or may not have actually changed,
         // not called the first time a component is rendered
         console.log('componentWillReceiveProps');
+        if (nextProps.counter !== this.props.counter) {
+            console.log('counter is changing from ' + this.props.counter + ' to ' + nextProps.counter);
+        }
+        console.log(nextProps);
     }
 
     componentWillUpdate() {
@@ -73,6 +77,13 @@ export default class Clock extends Component {
 
     componentDidUpdate() {
         console.log('componentDidUpdate');
+        console.log(this.props);
     }
 
+    componentWillUnmount() {
+        console.log('componentWillUnmount');
+        if (this.timeout) {
+            clearTimeout(this.timeout);
+        }
+    }
 }
